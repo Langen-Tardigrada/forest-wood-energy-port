@@ -1,0 +1,30 @@
+# use image Node.js to default
+image: node:20
+
+stages:
+  - build
+
+variables:
+  NODE_ENV: "production"
+
+# cache for reduce npm install time
+cache:
+  key: "$CI_COMMIT_REF_SLUG"
+  paths:
+    - node_modules/
+    - .next/cache/
+
+# 4. name job is build
+build:
+  stage: build
+  image: node:20
+  script:
+    - echo "Node.js Version:"
+    - node -v
+    - echo "NPM Version:"
+    - npm ci
+    - npm run build
+  artifacts:
+    paths:
+      - ".next"
+    expire_in: 1h

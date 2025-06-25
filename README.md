@@ -20,11 +20,11 @@ A production-ready content management system (CMS) for **Forest Wood Energy**, b
 
 ## 🛠️ Tech Stack
 
-| Frontend    | Backend               | Infra                    |
-| ----------- | --------------------- | ------------------------ |
-| Next.js 15  | REST API (API Routes) | DigitalOcean Spaces      |
-| TypeScript  | MongoDB Atlas         | Vercel / DO App Platform |
-| Emotion CSS | Mongoose              | S3 SDK                   |
+| Frontend    | Backend               | Infra               |
+| ----------- | --------------------- | ------------------- |
+| Next.js 15  | REST API (API Routes) | DigitalOcean Spaces |
+| TypeScript  | MongoDB Atlas         | DO App Platform     |
+| Emotion CSS | Mongoose              | S3 SDK              |
 
 ---
 
