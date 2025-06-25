@@ -1,0 +1,53 @@
+{
+	"name": "forest-wood-energy",
+	"version": "0.1.0",
+	"private": true,
+	"scripts": {
+		"dev": "next dev -p 3001",
+		"build": "next build",
+		"start": "next start -p $PORT",
+		"lint": "next lint"
+	},
+	"browserslist": [
+		">0.2%",
+		"not dead",
+		"not IE 11",
+		"not op_mini all"
+	],
+	"dependencies": {
+		"@aws-sdk/client-s3": "^3.806.0",
+		"@emotion/styled": "^11.14.0",
+		"@fontsource/eb-garamond": "^5.1.0",
+		"@fontsource/jost": "^5.0.19",
+		"@fontsource/lora": "^5.1.0",
+		"@fortawesome/fontawesome-free": "^6.7.1",
+		"@fortawesome/fontawesome-svg-core": "^6.7.1",
+		"@fortawesome/free-brands-svg-icons": "^6.7.2",
+		"@fortawesome/free-regular-svg-icons": "^6.7.1",
+		"@fortawesome/free-solid-svg-icons": "^6.7.1",
+		"@fortawesome/react-fontawesome": "^0.2.2",
+		"@hookform/resolvers": "^3.9.1",
+		"@types/node": "^22.15.18",
+		"@types/react": "^18.3.21",
+		"axios": "^1.9.0",
+		"mongodb": "^6.16.0",
+		"mongoose": "^8.14.2",
+		"next": "^15.3.2",
+		"next-auth": "^4.24.11",
+		"nodemailer": "^6.9.16",
+		"plaiceholder": "^3.0.0",
+		"react": "^19.1.0",
+		"react-dom": "^19.1.0",
+		"react-hook-form": "^7.53.1",
+		"swr": "^2.3.3",
+		"typescript": "^5.6.2",
+		"uuid": "^11.1.0",
+		"yup": "^1.4.0"
+	},
+	"devDependencies": {
+		"@types/nodemailer": "^6.4.16",
+		"@types/react-dom": "^18",
+		"eslint": "^8.57.1",
+		"eslint-config-next": "14.2.6"
+	}
+}
