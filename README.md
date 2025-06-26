@@ -72,6 +72,8 @@ This project is a **production-ready CMS** currently live at:
 
 The main app is structured using Next.js App Router with the following layout:
 
+```text
+
 components/ # Shared UI components
 screen/ # Screen for each page
 
@@ -89,6 +91,8 @@ src/
 
 types/ # TypeScript interface and types
 utils/ # Utilities like blur images
+
+```
 
 ---
 
