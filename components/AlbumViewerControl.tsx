@@ -149,7 +149,7 @@ const MediaGuideCard: React.FC<MediaGuideProps> = ({
 							zIndex: 0,
 						}}
 						placeholder="blur"
-						blurDataURL={""}
+						blurDataURL={media.blurDataUrl}
 					/>
 				) : (
 					<Video

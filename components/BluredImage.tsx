@@ -11,12 +11,6 @@ interface BlurImageProps
 export default function BlurImage({ src, ...props }: BlurImageProps) {
 	const [blur, setBlur] = useState<string>("empty");
 
-	// useEffect(() => {
-	// 	preloadBlur(src).then((blurDataURL) => {
-	// 		setBlur(blurDataURL);
-	// 	});
-	// }, [src]);
-
 	return (
 		<Image
 			src={src}

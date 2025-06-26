@@ -169,7 +169,7 @@ export const ProductCardMobile: React.FC<Props> = ({
 						<BrandLabel>FOREST WOOD ENERGY Products</BrandLabel>
 						<ButtonLearnMore
 							className="button-learn-more-instance"
-							stateProp="enabled"
+							stateProp="disabled"
 							link="/product"
 							ariaLabel="go to all product page"
 						/>
@@ -192,7 +192,7 @@ export const ProductCardMobile: React.FC<Props> = ({
 						labelText="Learn More"
 						labelTextClassName=""
 						showIcon={"none"}
-						stateProp="enabled"
+						stateProp="disabled"
 						style="filled"
 						IconName={undefined}
 						onClick={undefined}

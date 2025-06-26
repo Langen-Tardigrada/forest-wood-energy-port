@@ -199,6 +199,20 @@ interface FooterProps {
 }
 
 const Footer: React.FC<FooterProps> = ({ mode }) => {
+	const disabled_list = [
+		"Our Mission",
+		"The Importance of Biomass and Renewable Energy",
+		"Our Team",
+		"All Products",
+		"Wood Pellet",
+		"Palm Kernel Shells",
+		"Briquettes",
+		"Wood Chips",
+		"Empty Fruit Bunches",
+		"Climate Change",
+		"Reducing Environment Impact",
+		"ESG",
+	];
 	return (
 		<FooterContainer mode={mode}>
 			<GroupListContainer>
@@ -212,7 +226,13 @@ const Footer: React.FC<FooterProps> = ({ mode }) => {
 									style={{ textDecoration: "none" }}
 									key={j}
 								>
-									<TextLabel mode={mode}> {sub.subTitle}</TextLabel>
+									<TextLabel
+										mode={mode}
+										disabled={disabled_list.includes(sub.subTitle)}
+									>
+										{" "}
+										{sub.subTitle}
+									</TextLabel>
 								</Link>
 							))}
 						</SubListContainer>

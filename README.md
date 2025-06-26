@@ -31,6 +31,33 @@ This project is a **production-ready CMS** currently live at:
 
 ---
 
+## 🗂 Pages in this showcase
+
+| Route           | Notes                                    |
+| --------------- | ---------------------------------------- |
+| `/` (Home)      | Hero, dynamic sections                   |
+| `/media`        | Public news & gallery (uses CDN images)  |
+| **Admin panel** | Screenshots below (requires credentials) |
+
+> Pages **/product, /about-us, /sustainability** contain customer-specific marketing copy and therefore are **excluded**.  
+> They can still be viewed on the live site for design reference.
+
+---
+
+## 📸 UI Preview
+
+## 📰 Public News Page (Live Product)
+
+🌐 [https://4est-energy.com/media/news](https://4est-energy.com/media/news)
+
+### 🔐 Admin Panel (Login & News Management)
+
+> Admin panel and dynamic news features require API access and auth credentials.
+> Here's a preview of what they look like in production.
+> ![Admin Panel](./assets/admin-preview.png)
+
+---
+
 ## 🛠️ Tech Stack
 
 | Frontend    | Backend               | Infra               |
@@ -52,12 +79,9 @@ src/
 ├── app/
 │ ├── page.tsx # Main landing page
 │ ├── layout.tsx # Root layout with header
-│ ├── about_us/page.tsx # About us page
 │ ├── admin/page.tsx # Admin page
 │ ├── contact_us/page.tsx # Contact us page
 │ ├── media/page.tsx # Media page
-│ ├── product/page.tsx # Product page
-│ ├── sustainability/page.tsx # Sustainability page
 │ ├── api/ # Connect Api
 │ └── css/ # Theme styling and global fonts
 ├── lib/ # Reusable logic
@@ -65,18 +89,6 @@ src/
 
 types/ # TypeScript interface and types
 utils/ # Utilities like blur images
-
----
-
-## 📰 Public News Page (Live Product)
-
-🌐 [https://4est-energy.com/media/news](https://4est-energy.com/media/news)
-
-### 🔐 Admin Panel (Login & News Management)
-
-> Admin panel and dynamic news features require API access and auth credentials.
-> Here's a preview of what they look like in production.
-> ![Admin Panel](./assets/admin-preview.png)
 
 ---
 
@@ -113,3 +125,5 @@ This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-opti
 
 ## Deploy on Digital ocean
 ```
+
+leekansiree@gmail.com | +66-93-296-8089

@@ -173,6 +173,7 @@ const Bar: React.FC<BarProps> = ({ onMouseEnter }) => {
 					<Link href={"/about_us/our_mission"}>
 						<TextLabel
 							ref={aboutUsRef}
+							disabled
 							onMouseEnter={() => onMouseEnter("About Us")}
 						>
 							About Us
@@ -181,6 +182,7 @@ const Bar: React.FC<BarProps> = ({ onMouseEnter }) => {
 					<Link href={"/product"}>
 						<TextLabel
 							ref={productRef}
+							disabled
 							onMouseEnter={() => onMouseEnter("Product")}
 						>
 							Product
@@ -189,6 +191,7 @@ const Bar: React.FC<BarProps> = ({ onMouseEnter }) => {
 					<Link href={"/sustainability/climate_change"}>
 						<TextLabel
 							ref={sustainabilityRef}
+							disabled
 							onMouseEnter={() => onMouseEnter("Sustainability")}
 						>
 							Sustainability

@@ -152,7 +152,15 @@ const SubjectContent: React.FC<SubjectProps> = ({
 							key={item.title}
 							style={{ textDecoration: "none" }}
 						>
-							<TextLabel>{item.title}</TextLabel>
+							<TextLabel
+								disabled={
+									subject === "About Us" ||
+									subject === "Product" ||
+									subject === "Sustainability"
+								}
+							>
+								{item.title}
+							</TextLabel>
 						</Link>
 					))}
 				</ListContainer>
