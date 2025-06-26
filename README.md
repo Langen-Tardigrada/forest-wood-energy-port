@@ -35,7 +35,7 @@ This project is a **production-ready CMS** currently live at:
 
 | Route           | Notes                                    |
 | --------------- | ---------------------------------------- |
-| `/` (Home)      | Hero, dynamic sections                   |
+| `/page`         | Home Page, Hero, dynamic sections        |
 | `/media`        | Public news & gallery (uses CDN images)  |
 | **Admin panel** | Screenshots below (requires credentials) |
 
