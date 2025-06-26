@@ -1,6 +1,19 @@
 # Forest Wood Energy – CMS Website
 
+This is a **showcase version** of the production project.
+Due to the exclusion of `.env` variables and customer-specific CMS/API credentials, this repository **is not runnable as-is** in local development.
+All sensitive configuration has been removed for security and privacy reasons.
+You may review the project structure, component architecture, and CI/CD pipeline setup for reference.
+
 A production-ready content management system (CMS) for **Forest Wood Energy**, built with **Next.js 15**, **TypeScript**, and **Emotion**. Features include admin authentication, dynamic news management, RESTful API, and image uploads with DigitalOcean Spaces.
+
+---
+
+## 🔗 Live Product
+
+This project is a **production-ready CMS** currently live at:
+
+🌐 [https://4est-energy.com](https://4est-energy.com)
 
 ---
 
@@ -30,21 +43,64 @@ A production-ready content management system (CMS) for **Forest Wood Energy**, b
 
 ## 📂 Folder Structure (Simplified)
 
-A production-ready content management system (CMS) for **Forest Wood Energy**, built with **Next.js 15**, **TypeScript**, and **Emotion**. Features include admin authentication, dynamic news management, RESTful API, and image uploads with DigitalOcean Spaces.
+The main app is structured using Next.js App Router with the following layout:
+
+components/ # Shared UI components
+screen/ # Screen for each page
+
+src/
+├── app/
+│ ├── page.tsx # Main landing page
+│ ├── layout.tsx # Root layout with header
+│ ├── about_us/page.tsx # About us page
+│ ├── admin/page.tsx # Admin page
+│ ├── contact_us/page.tsx # Contact us page
+│ ├── media/page.tsx # Media page
+│ ├── product/page.tsx # Product page
+│ ├── sustainability/page.tsx # Sustainability page
+│ ├── api/ # Connect Api
+│ └── css/ # Theme styling and global fonts
+├── lib/ # Reusable logic
+└── models/ # Models Schema
+
+types/ # TypeScript interface and types
+utils/ # Utilities like blur images
+
+---
+
+## 📰 Public News Page (Live Product)
+
+🌐 [https://4est-energy.com/media/news](https://4est-energy.com/media/news)
+
+### 🔐 Admin Panel (Login & News Management)
+
+> Admin panel and dynamic news features require API access and auth credentials.
+> Here's a preview of what they look like in production.
+> ![Admin Panel](./assets/admin-preview.png)
+
+---
+
+## ⚙️ CI/CD (GitLab – from production)
+
+This GitLab pipeline file was adapted from the original production project to show CI setup.  
+It cannot be used with GitHub directly.
+
+> Due to DigitalOcean App Platform’s current lack of native GitLab integration, CI/CD was manually separated. GitLab pipelines were still used to validate build and linting steps per commit.
+
+---
 
 ## 🧪 Development Setup
 
 ```bash
 # 1. Clone the repo
-git clone https://gitlab.com/forest-wood-energy/fwe-website.git
-cd fwe-website
+git clone https://github.com/Langen-Tardigrada/forest-wood-energy-port.git
 
 # 2. Install dependencies
 npm install
 
-# 3. Set up .env.local
-cp .env.example .env.local
-# → Fill in MongoDB URI, DigitalOcean credentials, etc.
+# 3. (Optional) Create a mock `.env.local` file
+touch .env.local
+# Add fake or placeholder values if needed for local testing
 
 # 4. Run locally
 npm run dev
