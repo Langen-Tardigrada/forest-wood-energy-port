@@ -74,23 +74,23 @@ The main app is structured using Next.js App Router with the following layout:
 
 ```text
 
-components/ # Shared UI components
-screen/ # Screen for each page
+components/                    # Shared UI components
+screen/                        # Screen for each page
 
 src/
 ├── app/
-│ ├── page.tsx # Main landing page
-│ ├── layout.tsx # Root layout with header
-│ ├── admin/page.tsx # Admin page
-│ ├── contact_us/page.tsx # Contact us page
-│ ├── media/page.tsx # Media page
-│ ├── api/ # Connect Api
-│ └── css/ # Theme styling and global fonts
-├── lib/ # Reusable logic
-└── models/ # Models Schema
+│ ├── page.tsx                 # Main landing page
+│ ├── layout.tsx               # Root layout with header
+│ ├── admin/page.tsx           # Admin page
+│ ├── contact_us/page.tsx      # Contact us page
+│ ├── media/page.tsx           # Media page
+│ ├── api/                     # Connect Api
+│ └── css/                     # Theme styling and global fonts
+├── lib/                       # Reusable logic
+└── models/                    # Models Schema
 
-types/ # TypeScript interface and types
-utils/ # Utilities like blur images
+types/                         # TypeScript interface and types
+utils/                         # Utilities like blur images
 
 ```
 
