@@ -54,7 +54,7 @@ This project is a **production-ready CMS** currently live at:
 
 > Admin panel and dynamic news features require API access and auth credentials.
 > Here's a preview of what they look like in production.
-> ![Admin Panel](./public/assets/admin-preview/)
+> [Admin Panel](./public/assets/admin-preview/)
 
 ---
 
